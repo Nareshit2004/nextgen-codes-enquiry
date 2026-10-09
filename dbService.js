@@ -14,11 +14,19 @@ if (DATABASE_URL) {
     ssl: { rejectUnauthorized: false }
   });
 } else {
-  // Local fallback: use node:sqlite
-  const { DatabaseSync } = require('node:sqlite');
-  const DB_FILE = process.env.DB_PATH || path.join(__dirname, 'enquiries.db');
-  sqliteDb = new DatabaseSync(DB_FILE);
+  // Local fallback: try node:sqlite or in-memory fallback
+  try {
+    const { DatabaseSync } = require('node:sqlite');
+    const DB_FILE = process.env.DB_PATH || path.join(__dirname, 'enquiries.db');
+    sqliteDb = new DatabaseSync(DB_FILE);
+  } catch (err) {
+    console.warn('node:sqlite not available in this environment. Falling back to in-memory store:', err.message);
+  }
 }
+
+// In-memory fallback if neither PG nor SQLite is available
+const memoryEnquiries = [];
+
 
 // Initialize tables
 async function initDatabase() {
@@ -170,6 +178,15 @@ async function insertEnquiry(record) {
       record.user_agent
     );
     return res.lastInsertRowid;
+  } else {
+    // Memory fallback
+    const id = memoryEnquiries.length + 1;
+    memoryEnquiries.push({
+      id,
+      ...record,
+      created_at: new Date().toISOString()
+    });
+    return id;
   }
 }
 
@@ -234,7 +251,10 @@ async function getAllEnquiries() {
     `);
     return stmt.all();
   }
-  return [];
+  return memoryEnquiries.map(m => ({
+    ...m,
+    submission_time: new Date().toISOString().replace('T', ' ').slice(0, 19)
+  }));
 }
 
 function isCloudDatabase() {
