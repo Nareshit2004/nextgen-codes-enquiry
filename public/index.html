@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Project Enquiry | NextGen Codes</title>
+  <meta name="description" content="Explore affordable student project support, final-year projects, AI/ML, web development, and customised software solutions with NextGen Codes.">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph / Meta for WhatsApp / Telegram / Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Student Project Enquiry | NextGen Codes">
+  <meta property="og:description" content="Submit your college project requirements for mini projects, final-year projects, AI/ML, and web applications. Student-friendly pricing & guidance.">
+  <meta property="og:site_name" content="NextGen Codes">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="data-rain.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#enquiry-form-section" class="skip-link">Skip to Enquiry Form</a>
+
+  <!-- =========================================
+       SECTION A — Header
+       ========================================= -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="brand-wrapper" aria-label="NextGen Codes Home">
+        <span class="brand-title">
+          NEXTGEN CODES<span class="accent-dot">.</span>
+        </span>
+        <span class="brand-tagline">BUILD. INNOVATE. GROW.</span>
+      </a>
+
+      <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="https://nareshit2004.github.io/nextgen-codes-portfolio/" target="_blank" rel="noopener noreferrer">View Portfolio</a></li>
+          <li><a href="#enquiry-form-section">Project Enquiry</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <a href="#enquiry-form-section" class="btn btn-primary btn-sm">Submit Project Enquiry</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Page Background Container Wrapping Hero, Services, Enquiry Form, Contact & Footer -->
+  <div class="page-background-wrapper dr-root dr-root--contained" id="pageBackgroundWrapper">
+    <!-- Complete Data Rain Component Layer (Mounted as First Child) -->
+    <div class="data-rain-canvas-container dr-bg-layer" id="dataRainContainer" aria-hidden="true">
+      <!-- Main simulation canvas -->
+      <canvas class="dr-main" id="dataRainMainCanvas"></canvas>
+      <!-- Bloom secondary glow canvas -->
+      <canvas class="dr-bloom" id="dataRainBloomCanvas"></canvas>
+      <!-- Cursor halo reactive glow -->
+      <div class="dr-cursor-halo"></div>
+      <!-- Vignette and grain post-processing overlays -->
+      <div class="dr-vignette"></div>
+      <div class="dr-grain"></div>
+    </div>
+
+    <main id="main-content">
+      <!-- =========================================
+           SECTION B — Hero Section
+           ========================================= -->
+      <section id="home" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          College Projects &amp; Mentorship Support
+        </div>
+
+        <h1 class="hero-title">Let's Build Your College Project Together!</h1>
+
+        <p class="hero-subtitle">
+          Have a project idea? Need help choosing a project domain? Looking for guidance with your mini project or final-year project? Tell us what you need, and the NextGen Codes team will get in touch with you.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#enquiry-form-section" class="btn btn-primary btn-lg">
+            Submit Your Requirements
+          </a>
+          <a href="https://nareshit2004.github.io/nextgen-codes-portfolio/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-outline btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Explore Our Work
+          </a>
+          <a href="https://wa.me/919345063972?text=Hi%20NextGen%20Codes!%20I%20am%20interested%20in%20discussing%20a%20college%20project.%20Please%20share%20the%20details." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-whatsapp btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.974.531 1.884.819 2.801.819 3.178 0 5.767-2.587 5.767-5.766.001-3.181-2.585-5.766-5.772-5.766zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.001-.482-1.666-.69-2.723-2.39-2.806-2.502-.082-.112-.667-.887-.667-1.691s.421-1.201.571-1.365c.15-.165.33-.206.44-.206.11 0 .22.001.315.006.101.005.236-.039.369.281.144.349.493 1.201.536 1.288.043.088.072.19.014.305-.058.115-.088.187-.175.288-.088.102-.185.228-.264.307-.089.088-.182.185-.078.363.104.179.462.763.992 1.236.682.609 1.258.797 1.437.886.179.088.284.077.391-.044.106-.121.457-.531.579-.714.122-.182.245-.152.41-.091.164.06 1.042.492 1.22.582.179.089.298.134.342.209.044.075.044.436-.1.841zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.66 1.438 5.168L2 22l4.981-1.385C8.423 21.503 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+            </svg>
+            WhatsApp Us
+          </a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            <span>Student-Friendly Pricing</span>
+          </div>
+          <div class="highlight-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>Customised Project Solutions</span>
+          </div>
+          <div class="highlight-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Guidance from Idea to Implementation</span>
+          </div>
+        </div>
+
+        <p class="disclaimer-text">
+          NextGen Codes provides learning guidance, architectural support, and implementation assistance. We support legitimate academic learning and encourage following college academic integrity policies.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         SECTION C — Services for Students
+         ========================================= -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How Can We Help You?</h2>
+          <p class="section-desc">
+            Whether you need a clear project idea, architecture planning, or hands-on implementation support, we're here to help you succeed.
+          </p>
+        </div>
+
+        <!-- Stacked Card Gallery Container -->
+        <div class="stacked-carousel-container" id="stackedGalleryContainer" role="region" aria-roledescription="carousel" aria-label="Our Services">
+          <div class="stacked-cards-stage" id="stackedCardsStage" aria-live="polite">
+            <!-- Card 1: Mini Projects -->
+            <article class="stacked-card" data-index="0" id="service-card-0" aria-label="1 of 6: Mini Projects">
+              <div class="stacked-card-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <span class="service-card-step">01 / 06</span>
+              </div>
+              <h3 class="service-title">Mini Projects</h3>
+              <p class="service-desc">Complete project planning and implementation support structured specifically for semester evaluation.</p>
+              <div class="service-card-footer">
+                <span class="service-badge">Student-friendly pricing</span>
+              </div>
+            </article>
+
+            <!-- Card 2: Final-Year Projects -->
+            <article class="stacked-card" data-index="1" id="service-card-1" aria-label="2 of 6: Final-Year Projects">
+              <div class="stacked-card-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <span class="service-card-step">02 / 06</span>
+              </div>
+              <h3 class="service-title">Final-Year Projects</h3>
+              <p class="service-desc">Customised end-to-end development, architecture design, and technical guidance tailored to your faculty review phases.</p>
+              <div class="service-card-footer">
+                <span class="service-badge">Student-friendly pricing</span>
+              </div>
+            </article>
+
+            <!-- Card 3: AI / ML Projects -->
+            <article class="stacked-card" data-index="2" id="service-card-3" aria-label="3 of 6: AI / ML Projects">
+              <div class="stacked-card-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                </div>
+                <span class="service-card-step">03 / 06</span>
+              </div>
+              <h3 class="service-title">AI / ML Projects</h3>
+              <p class="service-desc">Machine learning models, deep learning, computer vision, natural language processing, and real-time AI applications.</p>
+              <div class="service-card-footer">
+                <span class="service-badge">Student-friendly pricing</span>
+              </div>
+            </article>
+
+            <!-- Card 4: Web Development -->
+            <article class="stacked-card" data-index="3" id="service-card-3" aria-label="4 of 6: Web Development">
+              <div class="stacked-card-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <span class="service-card-step">04 / 06</span>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-desc">Modern frontend, responsive UI, backend REST APIs, full-stack architectures, and SQL/NoSQL database integrations.</p>
+              <div class="service-card-footer">
+                <span class="service-badge">Student-friendly pricing</span>
+              </div>
+            </article>
+
+            <!-- Card 5: Software Applications -->
+            <article class="stacked-card" data-index="4" id="service-card-4" aria-label="5 of 6: Software Applications">
+              <div class="stacked-card-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <span class="service-card-step">05 / 06</span>
+              </div>
+              <h3 class="service-title">Software Applications</h3>
+              <p class="service-desc">Robust desktop and console software implementations in Python, Java, C++, and other suitable programming languages.</p>
+              <div class="service-card-footer">
+                <span class="service-badge">Student-friendly pricing</span>
+              </div>
+            </article>
+
+            <!-- Card 6: Project Guidance -->
+            <article class="stacked-card" data-index="5" id="service-card-5" aria-label="6 of 6: Project Guidance">
+              <div class="stacked-card-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <span class="service-card-step">06 / 06</span>
+              </div>
+              <h3 class="service-title">Project Guidance</h3>
+              <p class="service-desc">System architecture, code explanation, debugging, documentation guidance, viva demo preparation, and cloud deployment.</p>
+              <div class="service-card-footer">
+                <span class="service-badge">Student-friendly pricing</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Accessible Navigation Controls -->
+          <div class="carousel-controls">
+            <button type="button" class="carousel-nav-btn" id="carouselPrevBtn" aria-label="Previous service card">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <div class="carousel-indicators" id="carouselIndicators" role="tablist" aria-label="Service carousel slides">
+              <button type="button" class="carousel-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+              <button type="button" class="carousel-dot" data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+              <button type="button" class="carousel-dot" data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+              <button type="button" class="carousel-dot" data-index="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+              <button type="button" class="carousel-dot" data-index="4" role="tab" aria-selected="false" aria-label="Slide 5"></button>
+              <button type="button" class="carousel-dot" data-index="5" role="tab" aria-selected="false" aria-label="Slide 6"></button>
+            </div>
+
+            <button type="button" class="carousel-nav-btn" id="carouselNextBtn" aria-label="Next service card">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="carousel-hint">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="7 13 12 18 17 13"></polyline>
+              <polyline points="7 6 12 11 17 6"></polyline>
+            </svg>
+            <span>Drag horizontally or use arrow buttons to explore services</span>
+          </div>
+
+          <!-- Portfolio Link below Services -->
+          <div style="margin-top: 1.75rem; text-align: center;">
+            <a href="https://nareshit2004.github.io/nextgen-codes-portfolio/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="contact-item-action"
+               style="font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.35rem;">
+              <span>See our projects and technical work</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         SECTION D — Project Enquiry Form
+         ========================================= -->
+    <section id="enquiry-form-section" class="form-section">
+      <div class="container form-wrapper">
+
+        <!-- Form Card Container -->
+        <div class="form-card" id="formCard">
+          <div class="form-intro">
+            <h2>Tell Us About Your Project</h2>
+            <p>
+              Fill in the details you know. If you haven't decided on a project idea yet, that's completely fine. Fields marked optional can be left blank.
+            </p>
+          </div>
+
+          <!-- Alert banner for submission error -->
+          <div id="formAlert" class="form-alert" role="alert" aria-live="polite"></div>
+
+          <form id="projectEnquiryForm" novalidate>
+            <div class="form-grid">
+
+              <!-- Row 1: Student Name & WhatsApp -->
+              <div class="form-row">
+                <!-- 1. Student Name -->
+                <div class="form-group">
+                  <label for="student_name">
+                    <span>Student Name <span class="req-star" title="Required">*</span></span>
+                  </label>
+                  <input type="text" id="student_name" name="student_name" required placeholder="Enter your full name" autocomplete="name" maxlength="120">
+                  <div class="field-error-msg" id="err_student_name">Please enter your full name.</div>
+                </div>
+
+                <!-- 2. WhatsApp Number -->
+                <div class="form-group">
+                  <label for="whatsapp_number">
+                    <span>WhatsApp Number <span class="req-star" title="Required">*</span></span>
+                  </label>
+                  <input type="tel" id="whatsapp_number" name="whatsapp_number" required placeholder="Enter your WhatsApp number" autocomplete="tel" maxlength="25">
+                  <span class="input-hint">Include country code if outside India (e.g., +91 9876543210)</span>
+                  <div class="field-error-msg" id="err_whatsapp_number">Please enter a valid WhatsApp number (8–15 digits).</div>
+                </div>
+              </div>
+
+              <!-- Row 2: Email & College Name -->
+              <div class="form-row">
+                <!-- 3. Email Address -->
+                <div class="form-group">
+                  <label for="email_address">
+                    <span>Email Address</span>
+                    <span class="optional-tag">Optional</span>
+                  </label>
+                  <input type="email" id="email_address" name="email_address" placeholder="Enter your email address (optional)" autocomplete="email" maxlength="150">
+                  <div class="field-error-msg" id="err_email_address">Please enter a valid email address or leave it blank.</div>
+                </div>
+
+                <!-- 4. College Name -->
+                <div class="form-group">
+                  <label for="college_name">
+                    <span>College Name <span class="req-star" title="Required">*</span></span>
+                  </label>
+                  <input type="text" id="college_name" name="college_name" required placeholder="Enter your college name" maxlength="200">
+                  <div class="field-error-msg" id="err_college_name">Please enter your college name.</div>
+                </div>
+              </div>
+
+              <!-- Row 3: Department & Current Academic Year -->
+              <div class="form-row">
+                <!-- 5. Department -->
+                <div class="form-group">
+                  <label for="department">
+                    <span>Department <span class="req-star" title="Required">*</span></span>
+                  </label>
+                  <input type="text" id="department" name="department" required placeholder="e.g. Information Technology, CSE, ECE, EEE, Mechanical, Civil, etc." maxlength="150" list="department-suggestions">
+                  <datalist id="department-suggestions">
+                    <option value="Computer Science and Engineering (CSE)">
+                    <option value="Information Technology (IT)">
+                    <option value="Electronics and Communication Engineering (ECE)">
+                    <option value="Electrical and Electronics Engineering (EEE)">
+                    <option value="Artificial Intelligence and Data Science (AI &amp; DS)">
+                    <option value="Mechanical Engineering">
+                    <option value="Civil Engineering">
+                    <option value="Master of Computer Applications (MCA)">
+                    <option value="B.Sc / M.Sc Computer Science">
+                    <option value="BCA">
+                  </datalist>
+                  <div class="field-error-msg" id="err_department">Please specify your department.</div>
+                </div>
+
+                <!-- 6. Current Academic Year -->
+                <div class="form-group">
+                  <label for="academic_year">
+                    <span>Current Academic Year <span class="req-star" title="Required">*</span></span>
+                  </label>
+                  <select id="academic_year" name="academic_year" required>
+                    <option value="">Select your academic year</option>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="field-error-msg" id="err_academic_year">Please select your academic year.</div>
+
+                  <!-- Conditional Year Other -->
+                  <div id="academic_year_other_wrap" class="conditional-box" style="display: none;">
+                    <input type="text" id="academic_year_other" name="academic_year_other" placeholder="Specify your academic year (e.g. PG 2nd Year, Diploma)" maxlength="100">
+                    <div class="field-error-msg" id="err_academic_year_other">Please specify your year.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7. Project Type -->
+              <div class="form-group full-width">
+                <label for="project_type">
+                  <span>Project Type <span class="req-star" title="Required">*</span></span>
+                </label>
+                <select id="project_type" name="project_type" required>
+                  <option value="">Select your project type</option>
+                  <option value="Mini Project">Mini Project</option>
+                  <option value="Final-Year Project">Final-Year Project</option>
+                  <option value="Academic Semester Project">Academic Semester Project</option>
+                  <option value="Personal / Portfolio Project">Personal / Portfolio Project</option>
+                  <option value="Research Project">Research Project</option>
+                  <option value="Need Help Choosing a Project">Need Help Choosing a Project</option>
+                  <option value="Other">Other</option>
+                </select>
+                <div class="field-error-msg" id="err_project_type">Please select a project type.</div>
+
+                <!-- Conditional Project Type Other -->
+                <div id="project_type_other_wrap" class="conditional-box" style="display: none;">
+                  <input type="text" id="project_type_other" name="project_type_other" placeholder="Specify your project type" maxlength="150">
+                  <div class="field-error-msg" id="err_project_type_other">Please specify your project type.</div>
+                </div>
+              </div>
+
+              <!-- 8. Project Domain (Multi-select) -->
+              <div class="form-group full-width">
+                <label>
+                  <span>Project Domain</span>
+                  <span class="optional-tag">Select all that apply</span>
+                </label>
+                <div class="checkbox-grid" id="domainCheckboxGroup">
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Artificial Intelligence (AI)"><span>Artificial Intelligence (AI)</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Machine Learning (ML)"><span>Machine Learning (ML)</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Deep Learning"><span>Deep Learning</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Data Science / Data Analytics"><span>Data Science / Data Analytics</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Web Development"><span>Web Development</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Mobile App Development"><span>Mobile App Development</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Internet of Things (IoT)"><span>Internet of Things (IoT)</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Cybersecurity"><span>Cybersecurity</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Cloud Computing"><span>Cloud Computing</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Python Development"><span>Python Development</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Java Development"><span>Java Development</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Full-Stack Development"><span>Full-Stack Development</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Computer Vision"><span>Computer Vision</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Automation"><span>Automation</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Database Applications"><span>Database Applications</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="project_domain" value="Not Decided Yet"><span>Not Decided Yet</span></label>
+                  <label class="checkbox-item" id="domainOtherCheckboxItem"><input type="checkbox" name="project_domain" value="Other" id="domain_other_checkbox"><span>Other</span></label>
+                </div>
+                <!-- Conditional Domain Other -->
+                <div id="project_domain_other_wrap" class="conditional-box" style="display: none;">
+                  <input type="text" id="project_domain_other" name="project_domain_other" placeholder="Specify your domain (e.g. Blockchain, NLP, Embedded)" maxlength="150">
+                </div>
+              </div>
+
+              <!-- 9. Project Idea / Requirements -->
+              <div class="form-group full-width">
+                <label for="project_requirements">
+                  <span>Project Idea / Requirements</span>
+                  <span class="optional-tag">Optional</span>
+                </label>
+                <textarea id="project_requirements" name="project_requirements" rows="4" placeholder="Describe your project idea, problem statement, expected features, technologies, or anything you have in mind. If you don't have an idea yet, leave this blank." maxlength="5000"></textarea>
+              </div>
+
+              <!-- 10. Preferred Technology / Programming Language -->
+              <div class="form-group full-width">
+                <label for="preferred_technologies">
+                  <span>Preferred Technology / Programming Language</span>
+                  <span class="optional-tag">Optional</span>
+                </label>
+                <input type="text" id="preferred_technologies" name="preferred_technologies" placeholder="e.g. Python, Java, React, Node.js, Flask, Django, SQL, or No preference" maxlength="500" list="tech-suggestions">
+                <datalist id="tech-suggestions">
+                  <option value="Python">
+                  <option value="Java">
+                  <option value="JavaScript / React / Node.js">
+                  <option value="Python / Flask / Django">
+                  <option value="SQL / MySQL / MongoDB">
+                  <option value="AI / ML frameworks (TensorFlow, PyTorch, Scikit-Learn)">
+                  <option value="No preference">
+                </datalist>
+                <span class="input-hint">Suggested: Python, Java, React, Node.js, Flask, Django, SQL, No preference, or Other</span>
+              </div>
+
+              <!-- 11. College Rules, Requirements, Do's and Don'ts -->
+              <div class="form-group full-width">
+                <label for="college_guidelines">
+                  <span>College Guidelines / Restrictions</span>
+                  <span class="optional-tag">Optional</span>
+                </label>
+                <textarea id="college_guidelines" name="college_guidelines" rows="4" placeholder="Does your college require a specific programming language, algorithm, dataset, hardware component, report format, project architecture, or technology? Are any libraries, APIs, tools, or approaches prohibited? Mention any rules, do's and don'ts, or faculty instructions here." maxlength="5000"></textarea>
+                <span class="input-hint">Leave blank if there are no specific restrictions or if you don't know the rules yet.</span>
+              </div>
+
+              <!-- 12. Budget Preference -->
+              <div class="form-group full-width">
+                <label for="budget_preference">
+                  <span>Budget Preference</span>
+                  <span class="optional-tag">Optional</span>
+                </label>
+                <select id="budget_preference" name="budget_preference">
+                  <option value="">Select your budget preference</option>
+                  <option value="Need an affordable option">Need an affordable option</option>
+                  <option value="Have a specific budget">Have a specific budget</option>
+                  <option value="Need to discuss the budget">Need to discuss the budget</option>
+                  <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+
+                <!-- Conditional Budget Amount -->
+                <div id="specific_budget_amount_wrap" class="conditional-box" style="display: none;">
+                  <div class="currency-input-wrap">
+                    <span class="currency-symbol" aria-hidden="true">₹</span>
+                    <input type="text" id="specific_budget_amount" name="specific_budget_amount" placeholder="Enter your budget amount in INR (e.g. 3000, 5000)" maxlength="30">
+                  </div>
+                </div>
+              </div>
+
+              <!-- 13. Required Assistance (Multi-select) -->
+              <div class="form-group full-width">
+                <label>
+                  <span>Required Assistance</span>
+                  <span class="optional-tag">Select all that apply</span>
+                </label>
+                <div class="checkbox-grid" id="assistanceCheckboxGroup">
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Project idea selection"><span>Project idea selection</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Project planning and architecture"><span>Project planning and architecture</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Implementation / coding support"><span>Implementation / coding support</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="AI / ML model development"><span>AI / ML model development</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Frontend development"><span>Frontend development</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Backend development"><span>Backend development</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Database integration"><span>Database integration</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Debugging and error fixing"><span>Debugging and error fixing</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Documentation guidance"><span>Documentation guidance</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Project demo preparation"><span>Project demo preparation</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Deployment support"><span>Deployment support</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Complete project discussion"><span>Complete project discussion</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="required_assistance" value="Not sure yet"><span>Not sure yet</span></label>
+                </div>
+              </div>
+
+              <!-- 14. Additional Requirements -->
+              <div class="form-group full-width">
+                <label for="additional_requirements">
+                  <span>Additional Requirements</span>
+                  <span class="optional-tag">Optional</span>
+                </label>
+                <textarea id="additional_requirements" name="additional_requirements" rows="3" placeholder="Anything else we should know about your requirements, deadlines, faculty expectations, or project preferences?" maxlength="3000"></textarea>
+              </div>
+
+            </div>
+
+            <!-- Submit Section -->
+            <div class="form-submit-box">
+              <button type="submit" id="submitBtn" class="btn-submit">
+                <span id="submitBtnText">SUBMIT PROJECT ENQUIRY</span>
+                <span id="submitSpinner" class="spinner" style="display: none;" aria-hidden="true"></span>
+              </button>
+              <p class="submit-note">
+                Your details will be used to respond to your project enquiry. Please avoid sharing passwords, personal identity documents, or other sensitive information.
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- =========================================
+             SECTION E — Success Panel
+             ========================================= -->
+        <div class="success-panel" id="successPanel" role="region" aria-live="polite">
+          <div class="success-icon-wrap" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h2>Thank You for Contacting NextGen Codes!</h2>
+          <p>
+            Your project enquiry has been submitted successfully. Our team can review your requirements and contact you using the details you provided.
+          </p>
+          <div class="success-actions">
+            <a href="https://wa.me/919345063972?text=Hi%20NextGen%20Codes!%20I%20have%20submitted%20my%20college%20project%20enquiry.%20Let's%20connect%20and%20discuss." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-whatsapp btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.974.531 1.884.819 2.801.819 3.178 0 5.767-2.587 5.767-5.766.001-3.181-2.585-5.766-5.772-5.766zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.001-.482-1.666-.69-2.723-2.39-2.806-2.502-.082-.112-.667-.887-.667-1.691s.421-1.201.571-1.365c.15-.165.33-.206.44-.206.11 0 .22.001.315.006.101.005.236-.039.369.281.144.349.493 1.201.536 1.288.043.088.072.19.014.305-.058.115-.088.187-.175.288-.088.102-.185.228-.264.307-.089.088-.182.185-.078.363.104.179.462.763.992 1.236.682.609 1.258.797 1.437.886.179.088.284.077.391-.044.106-.121.457-.531.579-.714.122-.182.245-.152.41-.091.164.06 1.042.492 1.22.582.179.089.298.134.342.209.044.075.044.436-.1.841zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.66 1.438 5.168L2 22l4.981-1.385C8.423 21.503 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+              </svg>
+              Chat on WhatsApp
+            </a>
+            <button type="button" class="btn btn-outline btn-lg" id="submitAnotherBtn">
+              Submit Another Enquiry
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================
+         SECTION F — Contact Section
+         ========================================= -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Have Questions Before Submitting?</h2>
+          <p class="section-desc">
+            Tell us about your project, discuss your requirements, and explore suitable options for your budget.
+          </p>
+        </div>
+
+        <div class="contact-card-grid">
+          <!-- Brand -->
+          <div class="contact-item-card">
+            <span class="contact-item-label">Brand</span>
+            <span class="contact-item-value">NextGen Codes</span>
+            <span class="input-hint">Dedicated college project assistance &amp; guidance</span>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="contact-item-card">
+            <span class="contact-item-label">Direct WhatsApp</span>
+            <span class="contact-item-value">+91 93450 63972</span>
+            <a href="https://wa.me/919345063972?text=Hi%20NextGen%20Codes!%20I%20am%20interested%20in%20discussing%20a%20college%20project.%20Please%20share%20the%20details." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="contact-item-action">
+              Message on WhatsApp &rarr;
+            </a>
+          </div>
+
+          <!-- Instagram -->
+          <div class="contact-item-card">
+            <span class="contact-item-label">Instagram Community</span>
+            <span class="contact-item-value">@nextgencodes</span>
+            <!-- Configurable Instagram Link -->
+            <a href="https://instagram.com/nextgencodes" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="contact-item-action">
+              Follow on Instagram &rarr;
+            </a>
+          </div>
+          <!-- Portfolio Contact Item -->
+          <div class="contact-item-card">
+            <span class="contact-item-label">Our Work</span>
+            <span class="contact-item-value">Portfolio</span>
+            <a href="https://nareshit2004.github.io/nextgen-codes-portfolio/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="contact-item-action">
+              Explore Portfolio Projects &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================
+       SECTION G — Footer
+       ========================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        &copy; NextGen Codes. Build. Innovate. Grow.
+      </div>
+      <div style="display: flex; align-items: center; gap: 1.25rem;">
+        <a href="https://nareshit2004.github.io/nextgen-codes-portfolio/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           style="color: var(--accent-cyan); font-weight: 600; text-decoration: none;">
+          Portfolio &nearr;
+        </a>
+        <div class="footer-badge">
+          Student Project Enquiry &amp; Mentorship
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div><!-- /#pageBackgroundWrapper -->
+
+  <script src="dataRain.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

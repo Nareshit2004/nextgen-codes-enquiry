@@ -1,0 +1,302 @@
+/* =========================================
+   SECTION C — Services Section (Stacked Card Gallery)
+   ========================================= */
+.services-section {
+  padding: 4rem 0 4.5rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-white);
+  overflow: hidden;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
+
+.section-title {
+  font-size: 2.15rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
+  color: var(--primary-navy);
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Stacked Carousel Outer Container */
+.stacked-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+/* Stage Area where stacked cards reside */
+.stacked-cards-stage {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.stacked-cards-stage:active {
+  cursor: grabbing;
+}
+
+/* Individual Stacked Card */
+.stacked-card {
+  position: absolute;
+  width: 360px;
+  max-width: 88vw;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.85rem;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  will-change: transform, opacity;
+  pointer-events: auto;
+}
+
+.stacked-card.is-active {
+  border-color: rgba(6, 182, 212, 0.45);
+  box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.12), 0 1px 3px rgba(6, 182, 212, 0.15);
+}
+
+.stacked-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.service-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background-color: var(--accent-cyan-subtle);
+  color: var(--accent-cyan-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(6, 182, 212, 0.18);
+}
+
+.service-card-step {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-subtle);
+  background: var(--bg-color);
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border-color);
+}
+
+.service-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--primary-navy);
+  line-height: 1.3;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.service-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.service-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--secondary-orange);
+  background-color: #fff7ed;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.service-badge::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--secondary-orange);
+}
+
+/* Navigation controls below stacked gallery */
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  z-index: 10;
+}
+
+.carousel-nav-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-nav-btn:hover {
+  background-color: var(--primary-navy);
+  color: #ffffff;
+  border-color: var(--primary-navy);
+  transform: translateY(-1px);
+}
+
+.carousel-nav-btn:active {
+  transform: translateY(1px);
+}
+
+/* Dots indicator */
+.carousel-indicators {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #cbd5e1;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.25s ease;
+}
+
+.carousel-dot.active {
+  width: 24px;
+  background-color: var(--accent-cyan);
+}
+
+/* Swipe guide hint */
+.carousel-hint {
+  font-size: 0.82rem;
+  color: var(--text-subtle);
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+/* =========================================
+   Mobile Responsiveness for Stacked Gallery
+   ========================================= */
+@media (max-width: 640px) {
+  .services-section {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .stacked-cards-stage {
+    height: 350px;
+  }
+
+  .stacked-card {
+    width: 320px;
+    max-width: 90vw;
+    padding: 1.4rem;
+  }
+
+  .stacked-card .service-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .stacked-card .service-desc {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 1.15rem;
+  }
+
+  .stacked-card-header {
+    margin-bottom: 0.9rem;
+  }
+
+  .service-icon-box {
+    width: 42px;
+    height: 42px;
+  }
+
+  .carousel-controls {
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+  }
+
+  .carousel-nav-btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 360px) {
+  .stacked-cards-stage {
+    height: 360px;
+  }
+
+  .stacked-card {
+    width: 285px;
+    max-width: 92vw;
+    padding: 1.15rem;
+  }
+
+  .stacked-card .service-title {
+    font-size: 1.05rem;
+  }
+
+  .stacked-card .service-desc {
+    font-size: 0.82rem;
+  }
+
+  .service-icon-box {
+    width: 38px;
+    height: 38px;
+  }
+}
+

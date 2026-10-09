@@ -1,0 +1,15 @@
+{
+  "name": "nextgen-codes-enquiry",
+  "version": "1.0.0",
+  "description": "Student Project Enquiry Website for NextGen Codes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "pg": "^8.23.1"
+  }
+}

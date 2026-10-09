@@ -1,0 +1,276 @@
+/* =========================================================================
+   Data Rain Component Styles — Exact Original Specifications
+   Variables:
+     --dr-bg-0: #020308
+     --dr-bg-1: #05070d
+     --dr-bg-2: #0a1020
+     --dr-calm: #22e6ff
+     --dr-mid: #8a5cff
+     --dr-hot: #ff3d9a
+     --dr-core: #eafcff
+     --dr-vignette: 0.62
+     --dr-grain: 0.05
+     --dr-bloom-blur: 10px
+     --dr-bloom-opacity: 0.7
+   ========================================================================= */
+
+:root {
+  --dr-bg-0: #020308;
+  --dr-bg-1: #05070d;
+  --dr-bg-2: #0a1020;
+  --dr-calm: #22e6ff;
+  --dr-mid: #8a5cff;
+  --dr-hot: #ff3d9a;
+  --dr-core: #eafcff;
+  --dr-vignette: 0.62;
+  --dr-grain: 0.05;
+  --dr-bloom-blur: 10px;
+  --dr-bloom-opacity: 0.7;
+}
+
+/* Root page wrapper with position: relative and isolation: isolate */
+.dr-root,
+.page-background-wrapper {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--dr-bg-0);
+  color: #ffffff;
+}
+
+/* Contained background mode */
+.dr-root--contained {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background container mounted as first child behind all content */
+.dr-bg-layer,
+.data-rain-canvas-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 15%, var(--dr-bg-2) 0%, var(--dr-bg-1) 50%, var(--dr-bg-0) 100%);
+}
+
+/* Main primary simulation canvas */
+.dr-main,
+.data-rain-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+/* Bloom glow secondary canvas with blur filter */
+.dr-bloom {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  filter: blur(var(--dr-bloom-blur));
+  opacity: var(--dr-bloom-opacity);
+  mix-blend-mode: screen;
+}
+
+/* Cursor halo glow */
+.dr-cursor-halo {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  margin-left: -160px;
+  margin-top: -160px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(34, 230, 255, 0.15) 0%, rgba(138, 92, 255, 0.08) 45%, transparent 70%);
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* Vignette overlay */
+.dr-vignette {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 35%, rgba(2, 3, 8, var(--dr-vignette)) 100%);
+  z-index: 2;
+}
+
+/* Film grain overlay */
+.dr-grain {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: var(--dr-grain);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  z-index: 3;
+}
+
+/* =========================================================================
+   Section Surfaces — Reveal Data Rain while preserving card readability
+   ========================================================================= */
+.hero-section {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(34, 230, 255, 0.12) !important;
+}
+
+.hero-title {
+  color: #ffffff !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero-subtitle {
+  color: #cbd5e1 !important;
+}
+
+.hero-badge {
+  background-color: rgba(34, 230, 255, 0.1) !important;
+  color: var(--dr-calm) !important;
+  border-color: rgba(34, 230, 255, 0.3) !important;
+}
+
+.highlight-item {
+  color: #e2e8f0 !important;
+}
+
+.highlight-item svg {
+  color: var(--dr-calm) !important;
+}
+
+.disclaimer-text {
+  color: #94a3b8 !important;
+}
+
+.services-section {
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(34, 230, 255, 0.12) !important;
+}
+
+.section-title {
+  color: #ffffff !important;
+}
+
+.section-desc {
+  color: #cbd5e1 !important;
+}
+
+.carousel-hint {
+  color: #94a3b8 !important;
+}
+
+.form-section {
+  background-color: transparent !important;
+}
+
+.contact-section {
+  background-color: transparent !important;
+  border-top: 1px solid rgba(34, 230, 255, 0.12) !important;
+}
+
+.site-footer {
+  background-color: rgba(5, 7, 13, 0.95) !important;
+  border-top: 1px solid rgba(34, 230, 255, 0.15) !important;
+}
+
+/* 
+ * PRESERVE WHITE CARDS, FORM FIELDS & READABILITY
+ */
+.form-card {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-intro h2 {
+  color: #0f172a !important;
+}
+
+.form-intro p {
+  color: #475569 !important;
+}
+
+.stacked-card {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45) !important;
+}
+
+.stacked-card .service-title {
+  color: #0f172a !important;
+}
+
+.stacked-card .service-desc {
+  color: #475569 !important;
+}
+
+.contact-item-card {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35) !important;
+}
+
+.contact-item-card .contact-item-value {
+  color: #0f172a !important;
+}
+
+/* Header on dark background */
+.site-header {
+  background-color: rgba(5, 7, 13, 0.92) !important;
+  border-bottom: 1px solid rgba(34, 230, 255, 0.12) !important;
+}
+
+.brand-title {
+  color: #ffffff !important;
+}
+
+.nav-links a {
+  color: #cbd5e1 !important;
+}
+
+.nav-links a:hover {
+  color: var(--dr-calm) !important;
+}
+
+.mobile-nav-toggle {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    background-color: rgba(5, 7, 13, 0.98) !important;
+    border-bottom: 1px solid rgba(34, 230, 255, 0.25) !important;
+    backdrop-filter: blur(12px) !important;
+  }
+  .main-nav .nav-links a {
+    color: #e2e8f0 !important;
+    padding: 0.5rem 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+}
+
+/* Outline button on dark background */
+.hero-cta-group .btn-outline {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(10, 16, 32, 0.6) !important;
+}
+
+.hero-cta-group .btn-outline:hover {
+  border-color: var(--dr-calm) !important;
+  color: var(--dr-calm) !important;
+}

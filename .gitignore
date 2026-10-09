@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Local databases and spreadsheets with actual student entries
+*.db
+*.db-journal
+*.tmp.*
+*.xlsx
+NextGen_Codes_Student_Enquiries.xlsx
+
+# Local environment configuration
+.env
+.env.local
+.env.*.local
+
+# Operating System & IDE artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Vercel build output
+.vercel
